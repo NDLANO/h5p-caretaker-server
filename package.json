@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "PHP based server component for using the H5P Caretaker library",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "H5P",
     "maintenance"
