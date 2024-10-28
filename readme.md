@@ -13,3 +13,5 @@ server application.
  - Copy the `h5p-caretaker-server` directory to your webserver - it should now be usable in general.
  - Ensure that the `h5p-caretaker-server/uploads` folder can be written by your server to
    temporarily unpack H5P files that will be uploaded.
+- Ensure that the `h5p-caretaker-server/cache` folder can be written by your server to
+   cache LibreText recommendations
