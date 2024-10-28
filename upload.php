@@ -77,6 +77,7 @@ if ($file['size'] > $maxFileSize) {
 
 $config = [
     'uploadsPath' => './uploads',
+    'cachePath' => './cache',
 ];
 
 if (isset($_POST['locale'])) {
