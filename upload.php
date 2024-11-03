@@ -1,15 +1,17 @@
 <?php
 /**
- * Tool for helping people to take care of H5P content.
+ * Reference server for the H5P Caretaker library.
  *
  * PHP version 8
  *
  * @category Tool
- * @package  H5PCaretaker
+ * @package  H5PCaretakerServer
  * @author   Oliver Tacke <oliver@snordian.de>
  * @license  MIT License
- * @link     https://todo
+ * @link     https://github.com/ndlano/h5p-caretaker-server
  */
+
+namespace Ndlano\H5PCaretakerServer;
 
 require __DIR__ . '/vendor/autoload.php';
 use Ndlano\H5PCaretaker\H5PCaretaker;

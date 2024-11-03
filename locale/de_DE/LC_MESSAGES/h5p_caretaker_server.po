@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-11-03 15:31+0100\n"
+"PO-Revision-Date: 2024-11-03 15:35+0100\n"
+"Last-Translator: H5P-Careraker\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: index.php:30
+msgid "H5P Caretaker Reference Implementation"
+msgstr "H5P-Caretaker-Referenzimplementierung"
+
+#: index.php:35
+msgid "or drag the file here"
+msgstr "oder ziehe die Datei hierher"
+
+#: index.php:36
+msgid "Remove file"
+msgstr "Entferne Datei"
+
+#: index.php:37
+msgid "Select your language"
+msgstr "Wähle deine Sprache"
+
+#: index.php:38
+msgid "Upload progress"
+msgstr "Upload-Fortschritt"
+
+#: index.php:39
+msgid "Upload your H5P file"
+msgstr "Lade deine H5P-Datei hoch"
+
+#: index.php:40
+msgid "Your file is being checked"
+msgstr "Deine Datei wird geprüft"
+
+#: index.php:41
+msgid "Your file was checked successfully"
+msgstr "Deine Datei wurde erfolgreich geprüft"
+
+#: index.php:48
+msgid "H5P Caretaker"
+msgstr "H5P Caretaker"
+
+#: index.php:67
+msgid "Take care of your H5P"
+msgstr "Kümmere dich um H5P"
+
+#: index.php:68
+msgid "Check your H5P file for improvements"
+msgstr "Prüfe deine H5P-Datei auf Verbesserungspotential"
+
+#: index.php:70
+msgid ""
+"Upload your H5P file and uncover accessibility issues, missing information "
+"and best practices that can help you improve youe H5P content."
+msgstr ""
+"Lade deine H5P-Datei hoch und entdecke Probleme mit der Barrierefreiheit, "
+"fehlende Informationen und bewährte Praktiken, die dir helfen können, deine "
+"H5P-Inhalte zu verbessern."
