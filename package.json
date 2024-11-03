@@ -2,7 +2,6 @@
   "name": "h5p-caretaker-server",
   "version": "1.0.0",
   "description": "PHP based server component for using the H5P Caretaker library",
-  "main": "index.js",
   "keywords": [
     "H5P",
     "maintenance"
