@@ -43,6 +43,10 @@
       uploadYourH5Pfile: "<?php echo _("Upload your H5P file") ?>",
       yourFileIsBeingChecked: "<?php echo _("Your file is being checked") ?>",
       yourFileWasCheckedSuccessfully: "<?php echo _("Your file was checked successfully") ?>",
+      totalMessages: "<?php echo _("Total messages") ?>",
+      totalIssues: "<?php echo _("Total issues") ?>",
+      groupBy: "<?php echo _("Group by") ?>",
+      download: "<?php echo _("Download") ?>"
     }
   </script>
 </head>
