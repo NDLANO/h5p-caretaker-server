@@ -46,7 +46,9 @@
       totalMessages: "<?php echo _("Total messages") ?>",
       totalIssues: "<?php echo _("Total issues") ?>",
       groupBy: "<?php echo _("Group by") ?>",
-      download: "<?php echo _("Download") ?>"
+      download: "<?php echo _("Download") ?>",
+      expandAllMessages: "<?php echo _("Expand all messages") ?>",
+      collapseAllMessages: "<?php echo _("Collapse all messages") ?>"
     }
   </script>
 </head>
