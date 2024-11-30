@@ -44,6 +44,8 @@
       yourFileIsBeingChecked: "<?php echo _("Your file is being checked") ?>",
       yourFileWasCheckedSuccessfully: "<?php echo _("Your file was checked successfully") ?>",
       totalMessages: "<?php echo _("Total messages") ?>",
+      issues: "<?php echo _("issues") ?>", // Results: issues
+      filterBy: "<?php echo _("Filter by") ?>", // Results: filter by
       groupBy: "<?php echo _("Group by") ?>",
       download: "<?php echo _("Download") ?>",
       expandAllMessages: "<?php echo _("Expand all messages") ?>",
