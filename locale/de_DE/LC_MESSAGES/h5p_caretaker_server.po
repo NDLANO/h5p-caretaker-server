@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-11-30 13:01+0100\n"
-"PO-Revision-Date: 2024-11-30 13:02+0100\n"
+"POT-Creation-Date: 2024-11-30 21:31+0100\n"
+"PO-Revision-Date: 2024-11-30 21:31+0100\n"
 "Last-Translator: H5P-Careraker\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -76,19 +76,23 @@ msgstr "Alle Meldungen ausklappen"
 msgid "Collapse all messages"
 msgstr "Alle Meldungen einklappen"
 
-#: index.php:59
+#: index.php:53
+msgid "H5P Caretaker report for @title"
+msgstr "H5P-Caretaker-Report für @title"
+
+#: index.php:60
 msgid "H5P Caretaker"
 msgstr "H5P Caretaker"
 
-#: index.php:78
+#: index.php:79
 msgid "Take care of your H5P"
 msgstr "Kümmere dich um H5P"
 
-#: index.php:79
+#: index.php:80
 msgid "Check your H5P file for improvements"
 msgstr "Prüfe deine H5P-Datei auf Verbesserungspotential"
 
-#: index.php:81
+#: index.php:82
 msgid ""
 "Upload your H5P file and uncover accessibility issues, missing information "
 "and best practices that can help you improve youe H5P content."

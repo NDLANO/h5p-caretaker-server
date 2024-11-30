@@ -44,12 +44,13 @@
       yourFileIsBeingChecked: "<?php echo _("Your file is being checked") ?>",
       yourFileWasCheckedSuccessfully: "<?php echo _("Your file was checked successfully") ?>",
       totalMessages: "<?php echo _("Total messages") ?>",
-      issues: "<?php echo _("issues") ?>", // Results: issues
-      filterBy: "<?php echo _("Filter by") ?>", // Results: filter by
+      issues: "<?php echo _("issues") ?>",
+      filterBy: "<?php echo _("Filter by") ?>",
       groupBy: "<?php echo _("Group by") ?>",
       download: "<?php echo _("Download") ?>",
       expandAllMessages: "<?php echo _("Expand all messages") ?>",
-      collapseAllMessages: "<?php echo _("Collapse all messages") ?>"
+      collapseAllMessages: "<?php echo _("Collapse all messages") ?>",
+      reportTitleTemplate: "<?php echo _("H5P Caretaker report for @title") ?>"
     }
   </script>
 </head>
