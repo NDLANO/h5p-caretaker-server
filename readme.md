@@ -15,7 +15,6 @@ server application.
  - Run `composer install` to install the latest version of the H5P Caretaker library.
  - Run `npm install` to install the latest version of the H5P Caretaker client.
  - Copy the `h5p-caretaker-server` directory to your webserver - it should now be usable in general.
- - You do not need to transfer all files - TODO: An extra publish script will be created
  - Ensure that the `h5p-caretaker-server/uploads` folder can be written by your server to
    temporarily unpack H5P files that will be uploaded.
  - Ensure that the `h5p-caretaker-server/cache` folder can be written by your server to
