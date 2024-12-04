@@ -1,6 +1,10 @@
-# H5P Caretaker
+# H5P Caretaker server reference implementation
 PHP based reference implementation for a standalone server using the H5P Caretaker library
 and the reference implementation for a JavaScript client providing the user interface.
+
+Please note that while you can use this implementation as is, it is only supposed to give you an idea
+about how the H5P Caretaker library can be used and how it can be hooked up to the H5P Careteker client
+reference implementation - which itself is also only a reference.
 
 ## Installation
 For now, you are required to be familiar with `composer` and `npm` in order to build the
