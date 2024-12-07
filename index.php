@@ -45,12 +45,20 @@
       yourFileWasCheckedSuccessfully: "<?php echo _("Your file was checked successfully") ?>",
       totalMessages: "<?php echo _("Total messages") ?>",
       issues: "<?php echo _("issues") ?>",
+      results: "<?php echo _("results") ?>",
       filterBy: "<?php echo _("Filter by") ?>",
       groupBy: "<?php echo _("Group by") ?>",
       download: "<?php echo _("Download") ?>",
       expandAllMessages: "<?php echo _("Expand all messages") ?>",
       collapseAllMessages: "<?php echo _("Collapse all messages") ?>",
-      reportTitleTemplate: "<?php echo _("H5P Caretaker report for @title") ?>"
+      allFilteredOut: "<?php echo _("All messages have been filtered out by content.") ?>",
+      reportTitleTemplate: "<?php echo _("H5P Caretaker report for @title") ?>",
+      contentFilter: "<?php echo _("Content type filter") ?>",
+      showAll: "<?php echo _("Show all") ?>",
+      showSelected: "<?php echo _("Various selected contents") ?>",
+      showNone: "<?php echo _("Show none") ?>",
+      filterByContent: "<?php echo _("Filter by content:") ?>",
+      reset: "<?php echo _("Reset") ?>",
     }
   </script>
 </head>
@@ -76,18 +84,35 @@
   </header>
 
   <main class="page" data-upload-endpoint="./upload.php">
-    <p class="main-color"><?php echo _('Take care of your H5P') ?></p>
-    <h2 class="title"><?php echo _("Check your H5P file for improvements") ?></h2>
-    <p>
-      <?php echo _("Upload your H5P file and uncover accessibility issues, missing information and best practices that can help you improve youe H5P content.") ?>
-    </p>
+      <div class="block background-dark">
+        <div class="centered-row block-visible">
+        <p class="main-color"><?php echo _('Take care of your H5P') ?></p>
+        <h2 class="title"><?php echo _("Check your H5P file for improvements") ?></h2>
+        <p>
+          <?php echo _("Upload your H5P file and uncover accessibility issues, missing information and best practices that can help you improve youe H5P content.") ?>
+        </p>
 
-    <div class="dropzone">
-      <!-- Will be filled by dropzone.js -->
+        <div class="dropzone">
+          <!-- Will be filled by dropzone.js -->
+        </div>
+
+      </div>
     </div>
 
-    <div class="output">
-      <!-- Will be filled by main.js -->
+    <div class="block background-dark">
+      <div class="centered-row">
+        <div class="filter-tree">
+          <!-- Will be filled by content-filter.js -->
+        </div>
+    </div>
+    </div>
+
+    <div class="block background-light">
+      <div class="output centered-row">
+        <!-- <div class="output">
+          <!-- Will be filled by main.js -->
+        <!-- </div> -->
+      </div>
     </div>
 
   </main>

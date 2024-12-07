@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-11-30 21:31+0100\n"
-"PO-Revision-Date: 2024-11-30 21:31+0100\n"
+"POT-Creation-Date: 2024-12-07 15:21+0100\n"
+"PO-Revision-Date: 2024-12-07 15:22+0100\n"
 "Last-Translator: H5P-Careraker\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -57,42 +57,74 @@ msgid "issues"
 msgstr "Auffälligkeiten"
 
 #: index.php:48
+msgid "results"
+msgstr "Ergebnisse"
+
+#: index.php:49
 msgid "Filter by"
 msgstr "Filtern nach"
 
-#: index.php:49
+#: index.php:50
 msgid "Group by"
 msgstr "Gruppieren nach"
 
-#: index.php:50
+#: index.php:51
 msgid "Download"
 msgstr "Herunterladen"
 
-#: index.php:51
+#: index.php:52
 msgid "Expand all messages"
 msgstr "Alle Meldungen ausklappen"
 
-#: index.php:52
+#: index.php:53
 msgid "Collapse all messages"
 msgstr "Alle Meldungen einklappen"
 
-#: index.php:53
+#: index.php:54
+msgid "All messages have been filtered out by content."
+msgstr "Alle Meldungen wurden nach Inhalt herausgefiltert."
+
+#: index.php:55
 msgid "H5P Caretaker report for @title"
 msgstr "H5P-Caretaker-Report für @title"
 
+#: index.php:56
+msgid "Content type filter"
+msgstr "Inhaltstypfilter"
+
+#: index.php:57
+msgid "Show all"
+msgstr "Zeige alle"
+
+#: index.php:58
+msgid "Various selected contents"
+msgstr "Verschiedene ausgewählte Inhalte"
+
+#: index.php:59
+msgid "Show none"
+msgstr "Zeige keine"
+
 #: index.php:60
+msgid "Filter by content:"
+msgstr "Filtere nach Inhalt:"
+
+#: index.php:61
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: index.php:68
 msgid "H5P Caretaker"
 msgstr "H5P Caretaker"
 
-#: index.php:79
+#: index.php:89
 msgid "Take care of your H5P"
 msgstr "Kümmere dich um H5P"
 
-#: index.php:80
+#: index.php:90
 msgid "Check your H5P file for improvements"
 msgstr "Prüfe deine H5P-Datei auf Verbesserungspotential"
 
-#: index.php:82
+#: index.php:92
 msgid ""
 "Upload your H5P file and uncover accessibility issues, missing information "
 "and best practices that can help you improve youe H5P content."
