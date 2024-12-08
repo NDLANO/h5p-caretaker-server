@@ -89,7 +89,7 @@
         <p class="main-color"><?php echo _('Take care of your H5P') ?></p>
         <h2 class="title"><?php echo _("Check your H5P file for improvements") ?></h2>
         <p>
-          <?php echo _("Upload your H5P file and uncover accessibility issues, missing information and best practices that can help you improve youe H5P content.") ?>
+          <?php echo _("Upload your H5P file and uncover accessibility issues, missing information and best practices that can help you improve your H5P content.") ?>
         </p>
 
         <div class="dropzone">
