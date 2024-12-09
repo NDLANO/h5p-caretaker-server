@@ -22,9 +22,10 @@
     $_GET['locale'] ?? locale_accept_from_http($_SERVER["HTTP_ACCEPT_LANGUAGE"])
   );
 
-  // Get cache buster version from package.json
-  $packageJson = json_decode(file_get_contents(__DIR__ . "/node_modules/h5p-caretaker-client/package.json"), true);
-  $clientVersion = htmlspecialchars($packageJson['version'], ENT_QUOTES, 'UTF-8');
+  $distFolder = './node_modules/h5p-caretaker-client/dist';
+
+  $distJS = basename(glob($distFolder . '/h5p-caretaker-client-*.js')[0] ?? '');
+  $distCSS = basename(glob($distFolder . '/h5p-caretaker-client-*.css')[0] ?? '');
 ?>
 <!DOCTYPE html>
 <html lang="<?php str_replace("_", "-", $locale) ?>">
@@ -32,8 +33,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo _("H5P Caretaker Reference Implementation") ?></title>
-  <link rel="stylesheet" href="node_modules/h5p-caretaker-client/dist/h5p-caretaker-client.css?v=<?php echo $clientVersion; ?>" />
-  <script type="module" src="node_modules/h5p-caretaker-client/dist/h5p-caretaker-client.js?v=<?php echo $clientVersion; ?>"></script>
+  <link rel="stylesheet" href="node_modules/h5p-caretaker-client/dist/<?php echo $distCSS; ?>" />
+  <script type="module" src="node_modules/h5p-caretaker-client/dist/<?php echo $distJS; ?>"></script>
   <script>
     window.H5P_CARETAKER_L10N = {
       orDragTheFileHere: "<?php echo _("or drag the file here") ?>",
