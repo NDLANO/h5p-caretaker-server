@@ -60,21 +60,34 @@ function done($code, $message)
 
 $maxFileSize = convertToBytes(min(ini_get('post_max_size'), ini_get('upload_max_filesize')));
 
-if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_FILES['file'])) {
+if ( ! isset( $_SERVER['REQUEST_METHOD'] ) || 'POST' !== $_SERVER['REQUEST_METHOD'] ) {
+    done( 405, _('Method Not Allowed') );
+}
+
+if (!isset($_FILES['file'])) {
     done(
         422,
-        'It seems that no file was provided or it exceeds the file upload size limit of ' . $maxFileSize / 1024 . 'KB.'
+        sprintf(
+            _('It seems that no file was provided or it exceeds the file upload size limit of %s KB.'),
+            $max_file_size / 1024
+        )
     );
 }
 
 $file = $_FILES['file'];
 
 if ($file['error'] !== UPLOAD_ERR_OK) {
-    done(500, 'Something went wrong with the file upload.');
+    done( 500, _('Something went wrong with the file upload, but I dunno what.'));
 }
 
 if ($file['size'] > $maxFileSize) {
-    done(413, 'The file is larger than the allowed maximum file size of ' . $maxFileSize / 1024 . 'KB.');
+    done(
+        413,
+        sprintf(
+            _('The file is larger than the allowed maximum file size of %s KB.'),
+            $max_file_size / 1024
+        )
+    );
 }
 
 $config = [

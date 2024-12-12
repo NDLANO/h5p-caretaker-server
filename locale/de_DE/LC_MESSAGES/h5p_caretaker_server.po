@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-12-08 14:35+0100\n"
-"PO-Revision-Date: 2024-12-08 14:35+0100\n"
+"POT-Creation-Date: 2024-12-12 19:54+0100\n"
+"PO-Revision-Date: 2024-12-12 19:56+0100\n"
 "Last-Translator: H5P-Careraker\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -16,115 +16,115 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: vendor\n"
 
-#: index.php:34
+#: index.php:35
 msgid "H5P Caretaker Reference Implementation"
 msgstr "H5P-Caretaker-Referenzimplementierung"
 
-#: index.php:39
+#: index.php:40
 msgid "or drag the file here"
 msgstr "oder ziehe die Datei hierher"
 
-#: index.php:40
+#: index.php:41
 msgid "Remove file"
 msgstr "Entferne Datei"
 
-#: index.php:41
+#: index.php:42
 msgid "Select your language"
 msgstr "Wähle deine Sprache"
 
-#: index.php:42
+#: index.php:43
 msgid "Upload progress"
 msgstr "Upload-Fortschritt"
 
-#: index.php:43
+#: index.php:44
 msgid "Upload your H5P file"
 msgstr "Lade deine H5P-Datei hoch"
 
-#: index.php:44
+#: index.php:45
 msgid "Your file is being checked"
 msgstr "Deine Datei wird geprüft"
 
-#: index.php:45
+#: index.php:46
 msgid "Your file was checked successfully"
 msgstr "Deine Datei wurde erfolgreich geprüft"
 
-#: index.php:46
+#: index.php:47
 msgid "Total messages"
 msgstr "Meldungen insgesamt"
 
-#: index.php:47
+#: index.php:48
 msgid "issues"
 msgstr "Auffälligkeiten"
 
-#: index.php:48
+#: index.php:49
 msgid "results"
 msgstr "Ergebnisse"
 
-#: index.php:49
+#: index.php:50
 msgid "Filter by"
 msgstr "Filtern nach"
 
-#: index.php:50
+#: index.php:51
 msgid "Group by"
 msgstr "Gruppieren nach"
 
-#: index.php:51
+#: index.php:52
 msgid "Download"
 msgstr "Herunterladen"
 
-#: index.php:52
+#: index.php:53
 msgid "Expand all messages"
 msgstr "Alle Meldungen ausklappen"
 
-#: index.php:53
+#: index.php:54
 msgid "Collapse all messages"
 msgstr "Alle Meldungen einklappen"
 
-#: index.php:54
+#: index.php:55
 msgid "All messages have been filtered out by content."
 msgstr "Alle Meldungen wurden nach Inhalt herausgefiltert."
 
-#: index.php:55
+#: index.php:56
 msgid "H5P Caretaker report for @title"
 msgstr "H5P-Caretaker-Report für @title"
 
-#: index.php:56
+#: index.php:57
 msgid "Content type filter"
 msgstr "Inhaltstypfilter"
 
-#: index.php:57
+#: index.php:58
 msgid "Show all"
 msgstr "Zeige alle"
 
-#: index.php:58
+#: index.php:59
 msgid "Various selected contents"
 msgstr "Verschiedene ausgewählte Inhalte"
 
-#: index.php:59
+#: index.php:60
 msgid "Show none"
 msgstr "Zeige keine"
 
-#: index.php:60
+#: index.php:61
 msgid "Filter by content:"
 msgstr "Filtere nach Inhalt:"
 
-#: index.php:61
+#: index.php:62
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: index.php:68
+#: index.php:69
 msgid "H5P Caretaker"
 msgstr "H5P Caretaker"
 
-#: index.php:89
+#: index.php:90
 msgid "Take care of your H5P"
 msgstr "Kümmere dich um H5P"
 
-#: index.php:90
+#: index.php:91
 msgid "Check your H5P file for improvements"
 msgstr "Prüfe deine H5P-Datei auf Verbesserungspotential"
 
-#: index.php:92
+#: index.php:93
 msgid ""
 "Upload your H5P file and uncover accessibility issues, missing information "
 "and best practices that can help you improve your H5P content."
@@ -132,3 +132,25 @@ msgstr ""
 "Lade deine H5P-Datei hoch und entdecke Probleme mit der Barrierefreiheit, "
 "fehlende Informationen und bewährte Praktiken, die dir helfen können, deine "
 "H5P-Inhalte zu verbessern."
+
+#: upload.php:64
+msgid "Method Not Allowed"
+msgstr "Methode nicht erlaubt"
+
+#: upload.php:71
+#, php-format
+msgid ""
+"It seems that no file was provided or it exceeds the file upload size limit "
+"of %s KB."
+msgstr ""
+"Es sieht so aus, als sei keine Datei angegeben worden oder die Dateigröße "
+"überschreitet die Grenze von %s KB."
+
+#: upload.php:80
+msgid "Something went wrong with the file upload, but I dunno what."
+msgstr "Etwas ist schief gelaufen, aber ich weiß nicht was."
+
+#: upload.php:87
+#, php-format
+msgid "The file is larger than the allowed maximum file size of %s KB."
+msgstr "Die Datei ist größer als die maximal erlaubte Dateigröße von %s KB."
