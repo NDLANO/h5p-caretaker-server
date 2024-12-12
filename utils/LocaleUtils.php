@@ -41,7 +41,6 @@ class LocaleUtils
         $locales = [
           "af" => "af_ZA",
           "ar" => "ar_AE",
-          "ar" => "ar_SA",
           "be" => "be_BY",
           "bg" => "bg_BG",
           "bn" => "bn_BD",
