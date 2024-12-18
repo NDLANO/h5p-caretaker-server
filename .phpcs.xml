@@ -1,0 +1,8 @@
+<ruleset name="Just files to exclude">
+    <rule ref="PSR12" />
+    <file>./bootstrap.php</file>
+    <file>./index.php</file>
+    <file>./upload-helpers.php</file>
+    <file>./upload.php</file>
+    <file>./utils</file>
+</ruleset>
