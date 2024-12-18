@@ -63,7 +63,7 @@
     }
   </script>
 </head>
-<body class="h5p-caretaker">
+<body class="h5p-caretaker" data-upload-endpoint="./upload.php">
 
   <header class="header">
     <h1 class="title main-color"><?php echo _("H5P Caretaker"); ?></h1>
@@ -84,7 +84,7 @@
     </select>
   </header>
 
-  <main class="page" data-upload-endpoint="./upload.php">
+  <main class="page">
       <div class="block background-dark">
         <div class="centered-row block-visible">
         <p class="main-color"><?php echo _('Take care of your H5P') ?></p>
