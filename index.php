@@ -115,9 +115,7 @@ $distCSS = basename(glob($distFolder . '/h5p-caretaker-client-*.css')[0] ?? '');
 
     <div class="block background-light">
       <div class="output centered-row">
-        <!-- <div class="output">
-          <!-- Will be filled by main.js -->
-        <!-- </div> -->
+        <!-- Will be filled by main.js -->
       </div>
     </div>
 
