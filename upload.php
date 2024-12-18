@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Reference server for the H5P Caretaker library.
  *
@@ -13,55 +14,13 @@
 
 namespace Ndlano\H5PCaretakerServer;
 
-require __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/bootstrap.php';
 use Ndlano\H5PCaretaker\H5PCaretaker;
-
- /**
-  * Convert a human-readable size to bytes.
-  *
-  * @param string $size The human-readable size.
-  */
- function convertToBytes($size) {
-    $unit = substr($size, -1);
-    $value = (int)$size;
-
-    switch (strtoupper($unit)) {
-        case 'G':
-            return $value * 1024 * 1024 * 1024;
-        case 'M':
-            return $value * 1024 * 1024;
-        case 'K':
-            return $value * 1024;
-        default:
-            return $value;
-    }
-}
-
-/**
- * Exit the script with an optional HTTP status code.
- *
- * @param int    $code    The HTTP status code to send.
- * @param string $message The message to display.
- *
- * @return void
- */
-function done($code, $message)
-{
-    if (isset($message)) {
-        echo $message;
-    }
-
-    if (isset($code)) {
-        http_response_code($code);
-    };
-
-    exit();
-}
 
 $maxFileSize = convertToBytes(min(ini_get('post_max_size'), ini_get('upload_max_filesize')));
 
-if ( ! isset( $_SERVER['REQUEST_METHOD'] ) || 'POST' !== $_SERVER['REQUEST_METHOD'] ) {
-    done( 405, _('Method Not Allowed') );
+if (! isset($_SERVER['REQUEST_METHOD']) || 'POST' !== $_SERVER['REQUEST_METHOD']) {
+    done(405, _('Method Not Allowed'));
 }
 
 if (!isset($_FILES['file'])) {
@@ -77,7 +36,7 @@ if (!isset($_FILES['file'])) {
 $file = $_FILES['file'];
 
 if ($file['error'] !== UPLOAD_ERR_OK) {
-    done( 500, _('Something went wrong with the file upload, but I dunno what.'));
+    done(500, _('Something went wrong with the file upload, but I dunno what.'));
 }
 
 if ($file['size'] > $maxFileSize) {
@@ -112,4 +71,3 @@ if (isset($analysis['error'])) {
 }
 
 done(200, $analysis['result']);
-?>
