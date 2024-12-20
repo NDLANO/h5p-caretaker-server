@@ -9,6 +9,6 @@
   "author": "NDLA",
   "license": "MIT",
   "dependencies": {
-    "h5p-caretaker-client": "h5p-caretaker-client"
+    "h5p-caretaker-client": "github:ndlano/h5p-caretaker-client"
   }
 }
