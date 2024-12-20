@@ -6,8 +6,10 @@ namespace Ndlano\H5PCaretakerServer;
  * Convert a human-readable size to bytes.
  *
  * @param string $size The human-readable size.
+ *
+ * @return int The size in bytes.
  */
-function convertToBytes($size, $foo)
+function convertToBytes($size)
 {
     $unit = substr($size, -1);
     $value = (int)$size;
