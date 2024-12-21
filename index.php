@@ -37,35 +37,8 @@ $distCSS = basename(glob($distFolder . '/h5p-caretaker-client-*.css')[0] ?? '');
   <title><?php echo _("H5P Caretaker Reference Implementation") ?></title>
   <link rel="stylesheet" href="node_modules/h5p-caretaker-client/dist/<?php echo $distCSS; ?>" />
   <script type="module" src="node_modules/h5p-caretaker-client/dist/<?php echo $distJS; ?>"></script>
-  <script>
-    window.H5P_CARETAKER_L10N = {
-      orDragTheFileHere: "<?php echo _("or drag the file here") ?>",
-      removeFile: "<?php echo _("Remove file") ?>",
-      selectYourLanguage: "<?php echo _("Select your language") ?>",
-      uploadProgress: "<?php echo _("Upload progress") ?>",
-      uploadYourH5Pfile: "<?php echo _("Upload your H5P file") ?>",
-      yourFileIsBeingChecked: "<?php echo _("Your file is being checked") ?>",
-      yourFileWasCheckedSuccessfully: "<?php echo _("Your file was checked successfully") ?>",
-      totalMessages: "<?php echo _("Total messages") ?>",
-      issues: "<?php echo _("issues") ?>",
-      results: "<?php echo _("results") ?>",
-      filterBy: "<?php echo _("Filter by") ?>",
-      groupBy: "<?php echo _("Group by") ?>",
-      download: "<?php echo _("Download") ?>",
-      expandAllMessages: "<?php echo _("Expand all messages") ?>",
-      collapseAllMessages: "<?php echo _("Collapse all messages") ?>",
-      allFilteredOut: "<?php echo _("All messages have been filtered out by content.") ?>",
-      reportTitleTemplate: "<?php echo _("H5P Caretaker report for @title") ?>",
-      contentFilter: "<?php echo _("Content type filter") ?>",
-      showAll: "<?php echo _("Show all") ?>",
-      showSelected: "<?php echo _("Various selected contents") ?>",
-      showNone: "<?php echo _("Show none") ?>",
-      filterByContent: "<?php echo _("Filter by content:") ?>",
-      reset: "<?php echo _("Reset") ?>",
-    }
-  </script>
 </head>
-<body class="h5p-caretaker" data-upload-endpoint="./upload.php">
+<body class="h5p-caretaker">
 
   <header class="header">
     <h1 class="title main-color"><?php echo _("H5P Caretaker"); ?></h1>
@@ -120,6 +93,38 @@ $distCSS = basename(glob($distFolder . '/h5p-caretaker-client-*.css')[0] ?? '');
     </div>
 
   </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new H5PCaretaker({
+        endpoint: './upload.php',
+        l10n: {
+          orDragTheFileHere: "<?php echo _("or drag the file here") ?>",
+          removeFile: "<?php echo _("Remove file") ?>",
+          selectYourLanguage: "<?php echo _("Select your language") ?>",
+          uploadProgress: "<?php echo _("Upload progress") ?>",
+          uploadYourH5Pfile: "<?php echo _("Upload your H5P file") ?>",
+          yourFileIsBeingChecked: "<?php echo _("Your file is being checked") ?>",
+          yourFileWasCheckedSuccessfully: "<?php echo _("Your file was checked successfully") ?>",
+          totalMessages: "<?php echo _("Total messages") ?>",
+          issues: "<?php echo _("issues") ?>",
+          results: "<?php echo _("results") ?>",
+          filterBy: "<?php echo _("Filter by") ?>",
+          groupBy: "<?php echo _("Group by") ?>",
+          download: "<?php echo _("Download") ?>",
+          expandAllMessages: "<?php echo _("Expand all messages") ?>",
+          collapseAllMessages: "<?php echo _("Collapse all messages") ?>",
+          allFilteredOut: "<?php echo _("All messages have been filtered out by content.") ?>",
+          reportTitleTemplate: "<?php echo _("H5P Caretaker report for @title") ?>",
+          contentFilter: "<?php echo _("Content type filter") ?>",
+          showAll: "<?php echo _("Show all") ?>",
+          showSelected: "<?php echo _("Various selected contents") ?>",
+          showNone: "<?php echo _("Show none") ?>",
+          filterByContent: "<?php echo _("Filter by content:") ?>",
+          reset: "<?php echo _("Reset") ?>",
+        },
+      });
+    });
+  </script>
 
 </body>
 </html>
