@@ -15,19 +15,21 @@
 namespace Ndlano\H5PCaretakerServer;
 
 require_once __DIR__ . '/bootstrap.php';
+require_once __DIR__ . '/utils/LocaleUtils.php';
+
 use Ndlano\H5PCaretaker\H5PCaretaker;
 
 $maxFileSize = convertToBytes(min(ini_get('post_max_size'), ini_get('upload_max_filesize')));
 
 if (! isset($_SERVER['REQUEST_METHOD']) || 'POST' !== $_SERVER['REQUEST_METHOD']) {
-    done(405, _('Method Not Allowed'));
+    done(405, LocaleUtils::getString('error:methodNotAllowed'));
 }
 
 if (!isset($_FILES['file'])) {
     done(
         422,
         sprintf(
-            _('It seems that no file was provided or it exceeds the file upload size limit of %s KB.'),
+            LocaleUtils::getString('error:noFileOrTooLarge'),
             $max_file_size / 1024
         )
     );
@@ -36,14 +38,14 @@ if (!isset($_FILES['file'])) {
 $file = $_FILES['file'];
 
 if ($file['error'] !== UPLOAD_ERR_OK) {
-    done(500, _('Something went wrong with the file upload, but I dunno what.'));
+    done(500, LocaleUtils::getString('error:unknownError'));
 }
 
 if ($file['size'] > $maxFileSize) {
     done(
         413,
         sprintf(
-            _('The file is larger than the allowed maximum file size of %s KB.'),
+            LocaleUtils::getString('error:fileTooLarge'),
             $max_file_size / 1024
         )
     );

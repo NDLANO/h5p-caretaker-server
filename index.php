@@ -34,14 +34,14 @@ $distCSS = basename(glob($distFolder . '/h5p-caretaker-client-*.css')[0] ?? '');
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo _("H5P Caretaker Reference Implementation") ?></title>
+  <title><?php echo LocaleUtils::getString('site:title') ?></title>
   <link rel="stylesheet" href="node_modules/h5p-caretaker-client/dist/<?php echo $distCSS; ?>" />
   <script type="module" src="node_modules/h5p-caretaker-client/dist/<?php echo $distJS; ?>"></script>
 </head>
 <body class="h5p-caretaker">
 
   <header class="header">
-    <h1 class="title main-color"><?php echo _("H5P Caretaker"); ?></h1>
+    <h1 class="title main-color"><?php echo LocaleUtils::getString('h5pcaretaker'); ?></h1>
     <select
       class="select-language" name="language" id="select-language" data-locale-key=<?php echo $DEFAULT_LOCALE_KEY ?>
     >
@@ -64,11 +64,11 @@ $distCSS = basename(glob($distFolder . '/h5p-caretaker-client-*.css')[0] ?? '');
   <main class="page">
       <div class="block background-dark">
         <div class="centered-row block-visible">
-        <p class="main-color"><?php echo _('Take care of your H5P') ?></p>
-        <h2 class="title"><?php echo _("Check your H5P file for improvements") ?></h2>
+        <p class="main-color"><?php echo LocaleUtils::getString('headline') ?></p>
+        <h2 class="title"><?php echo LocaleUtils::getString('callToAction') ?></h2>
         <p>
           <?php // phpcs:ignore Generic.Files.LineLength.TooLong ?>
-          <?php echo _("Upload your H5P file and uncover accessibility issues, missing information and best practices that can help you improve your H5P content.") ?>
+          <?php echo LocaleUtils::getString('callToActionDetails') ?>
         </p>
 
         <div class="dropzone">
@@ -98,29 +98,29 @@ $distCSS = basename(glob($distFolder . '/h5p-caretaker-client-*.css')[0] ?? '');
       new H5PCaretaker({
         endpoint: './upload.php',
         l10n: {
-          orDragTheFileHere: "<?php echo _("or drag the file here") ?>",
-          removeFile: "<?php echo _("Remove file") ?>",
-          selectYourLanguage: "<?php echo _("Select your language") ?>",
-          uploadProgress: "<?php echo _("Upload progress") ?>",
-          uploadYourH5Pfile: "<?php echo _("Upload your H5P file") ?>",
-          yourFileIsBeingChecked: "<?php echo _("Your file is being checked") ?>",
-          yourFileWasCheckedSuccessfully: "<?php echo _("Your file was checked successfully") ?>",
-          totalMessages: "<?php echo _("Total messages") ?>",
-          issues: "<?php echo _("issues") ?>",
-          results: "<?php echo _("results") ?>",
-          filterBy: "<?php echo _("Filter by") ?>",
-          groupBy: "<?php echo _("Group by") ?>",
-          download: "<?php echo _("Download") ?>",
-          expandAllMessages: "<?php echo _("Expand all messages") ?>",
-          collapseAllMessages: "<?php echo _("Collapse all messages") ?>",
-          allFilteredOut: "<?php echo _("All messages have been filtered out by content.") ?>",
-          reportTitleTemplate: "<?php echo _("H5P Caretaker report for @title") ?>",
-          contentFilter: "<?php echo _("Content type filter") ?>",
-          showAll: "<?php echo _("Show all") ?>",
-          showSelected: "<?php echo _("Various selected contents") ?>",
-          showNone: "<?php echo _("Show none") ?>",
-          filterByContent: "<?php echo _("Filter by content:") ?>",
-          reset: "<?php echo _("Reset") ?>",
+          selectYourLanguage: "<?php LocaleUtils::getString('languageSelect:a11ySelectLanguage') ?>",
+          orDragTheFileHere: "<?php echo LocaleUtils::getString('dropzone:orDragTheFileHere') ?>",
+          removeFile: "<?php echo LocaleUtils::getString('dropzone:removeFile') ?>",
+          uploadProgress: "<?php echo LocaleUtils::getString('dropzone:uploadProgress') ?>",
+          uploadYourH5Pfile: "<?php echo LocaleUtils::getString('dropzone:uploadH5PFile') ?>",
+          yourFileIsBeingChecked: "<?php echo LocaleUtils::getString('dropzone:fileBeingChecked') ?>",
+          yourFileWasCheckedSuccessfully: "<?php echo LocaleUtils::getString('dropzone:fileCheckedSuccessfully') ?>",
+          allFilteredOut: "<?php LocaleUtils::getString('filter:allFilteredOut') ?>",
+          contentFilter: "<?php echo LocaleUtils::getString('filter:contentFilter') ?>",
+          showAll: "<?php echo LocaleUtils::getString('filter:showAll') ?>",
+          showSelected: "<?php echo LocaleUtils::getString('filter:showSelected') ?>",
+          showNone: "<?php echo LocaleUtils::getString('filter:showNone') ?>",
+          filterByContent: "<?php echo LocaleUtils::getString('filter:filterByContent') ?>",
+          reset: "<?php echo LocaleUtils::getString('filter:reset') ?>",
+          totalMessages: "<?php echo LocaleUtils::getString('results:totalMessages') ?>",
+          issues: "<?php echo LocaleUtils::getString('results:issues') ?>",
+          results: "<?php echo LocaleUtils::getString('results:results') ?>",
+          filterBy: "<?php echo LocaleUtils::getString('results:filterBy') ?>",
+          groupBy: "<?php echo LocaleUtils::getString('results:groupBy') ?>",
+          download: "<?php echo LocaleUtils::getString('results:download') ?>",
+          expandAllMessages: "<?php echo LocaleUtils::getString('expand:expandAllMessages') ?>",
+          collapseAllMessages: "<?php echo LocaleUtils::getString('expand:collapseAllMessages') ?>",
+          reportTitleTemplate: "<?php echo LocaleUtils::getString('report:titleTemplate') ?>",
         },
       });
     });

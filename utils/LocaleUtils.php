@@ -25,9 +25,57 @@ namespace Ndlano\H5PCaretakerServer;
  */
 class LocaleUtils
 {
-    private static $LOCALE_PATH = "locale";
-    private static $DEFAULT_LOCALE = "en_US";
+    private static $LOCALE_PATH = "lang";
     private static $DEFAULT_TEXT_DOMAIN = "h5p_caretaker_server";
+    private static $DEFAULT_LOCALE = "en";
+    private static $strings = [];
+    private static $currentLocale = 'en';
+
+    /**
+     * Set the locale.
+     *
+     * @param string $locale The locale to set.
+     *
+     * @return string The current locale.
+     */
+    public static function setLocale($locale)
+    {
+        $langFile = join(DIRECTORY_SEPARATOR, [__DIR__, '..', 'lang', $locale, 'strings.php']);
+
+        if (!file_exists($langFile)) {
+            $locale = explode("_", $locale)[0];
+            $langFile = join(DIRECTORY_SEPARATOR, [__DIR__, '..', 'lang', $locale, 'strings.php']);
+        }
+
+        if (file_exists($langFile)) {
+            self::$currentLocale = $locale;
+            include $langFile;
+            self::$strings[self::$currentLocale] = $string;
+        } else {
+            self::$currentLocale = self::$DEFAULT_LOCALE;
+        }
+
+        return self::$currentLocale;
+    }
+
+    /**
+     * Get a string by its identifier.
+     *
+     * @param string $identifier The identifier of the string.
+     * @param string $specificLocale The locale to use. Optional.
+     *
+     * @return string The string.
+     */
+    public static function getString($identifier, $specificLocale = null)
+    {
+        if (!isset(self::$strings[self::$currentLocale])) {
+            self::setLocale(self::$DEFAULT_LOCALE);
+        }
+
+        return self::$strings[$specificLocale ?? self::$currentLocale][$identifier] ??
+            self::$strings[self::$DEFAULT_LOCALE][$identifier] ??
+            $identifier;
+    }
 
     /**
      * Get the complete (default) locale for a given language.
@@ -141,37 +189,22 @@ class LocaleUtils
     public static function getAvailableLocales()
     {
         if (!is_dir(self::$LOCALE_PATH)) {
-            return [];
+            return [self::$DEFAULT_LOCALE];
         }
 
-        $translationDirectories = array_filter(
+        $foundlocales = array_filter(
             scandir(self::$LOCALE_PATH),
-            function ($entry) {
-                if ($entry === "." || $entry === "..") {
-                    return false;
-                }
-
-                $translationDirectory = self::$LOCALE_PATH . DIRECTORY_SEPARATOR . $entry;
-                if (!is_dir($translationDirectory)) {
-                    return false;
-                }
-
-                if (!file_exists($translationDirectory . DIRECTORY_SEPARATOR . "LC_MESSAGES")) {
-                    return false;
-                }
-
-                $translationFiles = array_filter(
-                    scandir($translationDirectory . DIRECTORY_SEPARATOR . "LC_MESSAGES"),
-                    function ($file) {
-                        return preg_match("/\.[pm]o$/", $file);
-                    }
-                );
-
-                return count($translationFiles) > 0;
+            function ($folder) {
+                return is_dir(self::$LOCALE_PATH . DIRECTORY_SEPARATOR . $folder) &&
+                    file_exists(
+                        self::$LOCALE_PATH . DIRECTORY_SEPARATOR .
+                            $folder . DIRECTORY_SEPARATOR .
+                            'strings.php'
+                    );
             }
         );
 
-        return array_merge([self::$DEFAULT_LOCALE], $translationDirectories);
+        return array_unique(array_merge([self::$DEFAULT_LOCALE], $foundlocales));
     }
 
     /**
@@ -182,26 +215,18 @@ class LocaleUtils
      */
     public static function requestTranslation($localeRequested)
     {
-        $localeUTF = LocaleUtils::getCompleteLocale($localeRequested ?? self::$DEFAULT_LOCALE);
-        if (!isset($localeUTF)) {
-            return self::$DEFAULT_LOCALE;
-        }
-
-        $locale = explode(".", $localeUTF)[0];
         $availableLocales = LocaleUtils::getAvailableLocales();
 
-        if (!in_array($locale, $availableLocales)) {
+        if (!in_array($localeRequested, $availableLocales)) {
+            $localeRequested = explode('_', $localeRequested)[0];
+        }
+
+        if (!in_array($localeRequested, $availableLocales)) {
             return self::$DEFAULT_LOCALE;
         }
 
-        putenv("LANG=" . $localeUTF);
-        putenv("LANGUAGE=" . $localeUTF);
-        setlocale(LC_ALL, $localeUTF);
+        self::setLocale($localeRequested);
 
-        $bindPath = realpath(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . self::$LOCALE_PATH);
-        bindtextdomain(self::$DEFAULT_TEXT_DOMAIN, $bindPath);
-        textdomain(self::$DEFAULT_TEXT_DOMAIN);
-
-        return $locale;
+        return $localeRequested;
     }
 }
