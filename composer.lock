@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NDLANO/h5p-caretaker.git",
-                "reference": "043194819b3fb4bd5340a5546bec6b6a3d20daab"
+                "reference": "59ddb61c4ff0ba31359a5df583235b205852238b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NDLANO/h5p-caretaker/zipball/043194819b3fb4bd5340a5546bec6b6a3d20daab",
-                "reference": "043194819b3fb4bd5340a5546bec6b6a3d20daab",
+                "url": "https://api.github.com/repos/NDLANO/h5p-caretaker/zipball/59ddb61c4ff0ba31359a5df583235b205852238b",
+                "reference": "59ddb61c4ff0ba31359a5df583235b205852238b",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 "source": "https://github.com/NDLANO/h5p-caretaker/tree/master",
                 "issues": "https://github.com/NDLANO/h5p-caretaker/issues"
             },
-            "time": "2024-12-20T15:38:53+00:00"
+            "time": "2025-01-17T16:02:11+00:00"
         }
     ],
     "packages-dev": [],
