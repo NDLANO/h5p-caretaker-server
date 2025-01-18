@@ -30,7 +30,7 @@ if (!isset($_FILES['file'])) {
         422,
         sprintf(
             LocaleUtils::getString('error:noFileOrTooLarge'),
-            $max_file_size / 1024
+            $maxFileSize / 1024
         )
     );
 }
@@ -46,7 +46,7 @@ if ($file['size'] > $maxFileSize) {
         413,
         sprintf(
             LocaleUtils::getString('error:fileTooLarge'),
-            $max_file_size / 1024
+            $maxFileSize / 1024
         )
     );
 }
