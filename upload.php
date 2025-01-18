@@ -19,7 +19,9 @@ require_once __DIR__ . '/utils/LocaleUtils.php';
 
 use Ndlano\H5PCaretaker\H5PCaretaker;
 
-$maxFileSize = convertToBytes(min(ini_get('post_max_size'), ini_get('upload_max_filesize')));
+$maxFileSize = convertToBytes(
+    min(ini_get('post_max_size'), ini_get('upload_max_filesize'))
+);
 
 if (! isset($_SERVER['REQUEST_METHOD']) || 'POST' !== $_SERVER['REQUEST_METHOD']) {
     done(405, LocaleUtils::getString('error:methodNotAllowed'));
