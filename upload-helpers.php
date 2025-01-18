@@ -36,13 +36,13 @@ function convertToBytes($size)
  */
 function done($code, $message)
 {
-    if (isset($message)) {
-        echo $message;
-    }
-
     if (isset($code)) {
         http_response_code($code);
     };
+    
+    if (isset($message)) {
+        echo $message;
+    }
 
     exit();
 }
