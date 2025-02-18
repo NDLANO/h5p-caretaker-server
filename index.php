@@ -23,20 +23,21 @@ $locale = LocaleUtils::requestTranslation(
     $_GET['locale'] ?? locale_accept_from_http($_SERVER["HTTP_ACCEPT_LANGUAGE"])
 );
 
-$distFolder = './node_modules/h5p-caretaker-client/dist';
-
-$distJS = basename(glob($distFolder . '/h5p-caretaker-client-*.js')[0] ?? '');
-$distCSS = basename(glob($distFolder . '/h5p-caretaker-client-*.css')[0] ?? '');
+$distBase = './node_modules/@explorendla/h5p-caretaker-client/dist/@explorendla';
+$distJS = basename(glob($distBase . '/h5p-caretaker-client-*.js')[0] ?? '');
+$distCSS = basename(glob($distBase . '/h5p-caretaker-client-*.css')[0] ?? '');
 ?>
 
 <!DOCTYPE html>
-<html lang="<?php str_replace("_", "-", $locale) ?>">
+<html lang="<?php echo str_replace("_", "-", $locale); ?>">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo LocaleUtils::getString('site:title') ?></title>
-  <link rel="stylesheet" href="node_modules/h5p-caretaker-client/dist/<?php echo $distCSS; ?>" />
-  <script type="module" src="node_modules/h5p-caretaker-client/dist/<?php echo $distJS; ?>"></script>
+  <title><?php echo LocaleUtils::getString('site:title'); ?></title>
+
+  <!-- Using $distBase to avoid redundancy -->
+  <link rel="stylesheet" href="<?php echo $distBase . '/' . $distCSS; ?>" />
+  <script type="module" src="<?php echo $distBase . '/' . $distJS; ?>"></script>
 </head>
 <body class="h5p-caretaker">
 
