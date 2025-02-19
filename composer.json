@@ -8,12 +8,6 @@
             "name": "NDLA"
         }
     ],
-    "repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/ndlano/h5p-caretaker"
-		}
-  ],
     "require": {
         "ndlano/h5p-caretaker": "^1.0.4"
     }

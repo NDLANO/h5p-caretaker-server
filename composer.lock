@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "59e78d57ba9c76eef87b017b775e2dbc",
+    "content-hash": "acbe8c328ea4f4b5148f7d2cfbc0537a",
     "packages": [
         {
             "name": "ndlano/h5p-caretaker",
@@ -29,6 +29,7 @@
                     "Ndlano\\H5PCaretaker\\": "app/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -48,8 +49,8 @@
             ],
             "description": "Library that is supposed to help people take care of H5P content types",
             "support": {
-                "source": "https://github.com/NDLANO/h5p-caretaker/tree/1.0.4",
-                "issues": "https://github.com/NDLANO/h5p-caretaker/issues"
+                "issues": "https://github.com/NDLANO/h5p-caretaker/issues",
+                "source": "https://github.com/NDLANO/h5p-caretaker/tree/1.0.4"
             },
             "time": "2025-02-19T09:39:48+00:00"
         }
