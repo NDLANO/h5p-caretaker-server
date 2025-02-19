@@ -15,7 +15,6 @@
 		}
   ],
     "require": {
-        "php": ">=8",
-        "ndlano/h5p-caretaker": "dev-master"
+        "ndlano/h5p-caretaker": "^1.0.4"
     }
 }
