@@ -35,6 +35,8 @@ $string['results:results'] = 'results';
 $string['results:filterBy'] = 'Filter by';
 $string['results:groupBy'] = 'Group by';
 $string['results:download'] = 'Download';
+$string['results:showDetails'] = 'Show details';
+$string['results:hideDetails'] = 'Hide details';
 
 $string['expand:expandAllMessages'] = 'Expand all messages';
 $string['expand:collapseAllMessages'] = 'Collapse all messages';

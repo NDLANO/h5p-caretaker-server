@@ -35,6 +35,8 @@ $string['results:results'] = 'Ergebnisse';
 $string['results:filterBy'] = 'Filtern nach';
 $string['results:groupBy'] = 'Gruppieren nach';
 $string['results:download'] = 'Herunterladen';
+$string['results:showDetails'] = 'Zeige Details';
+$string['results:hideDetails'] = 'Verstecke Details';
 
 $string['expand:expandAllMessages'] = 'Alle Meldungen ausklappen';
 $string['expand:collapseAllMessages'] = 'Alle Meldungen einklappen';

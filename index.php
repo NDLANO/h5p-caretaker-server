@@ -119,6 +119,8 @@ $distCSS = basename(glob($distBase . '/h5p-caretaker-client-*.css')[0] ?? '');
           filterBy: "<?php echo LocaleUtils::getString('results:filterBy') ?>",
           groupBy: "<?php echo LocaleUtils::getString('results:groupBy') ?>",
           download: "<?php echo LocaleUtils::getString('results:download') ?>",
+          showDetails: "<?php echo LocaleUtils::getString('results:showDetails') ?>",
+          hideDetails: "<?php echo LocaleUtils::getString('results:hideDetails') ?>",
           expandAllMessages: "<?php echo LocaleUtils::getString('expand:expandAllMessages') ?>",
           collapseAllMessages: "<?php echo LocaleUtils::getString('expand:collapseAllMessages') ?>",
           reportTitleTemplate: "<?php echo LocaleUtils::getString('report:titleTemplate') ?>",
