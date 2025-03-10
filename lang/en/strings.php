@@ -6,6 +6,7 @@ $string['error:fileTooLarge'] = "The file is larger than the limit of %s bytes."
 $string['error:methodNotAllowed'] = 'Method Not Allowed';
 $string['error:noFileOrTooLarge'] = 'It seems that no file was provided or it exceeds the file upload size limit of %s KB.';
 $string["error:unknownError"] = "Something went wrong, but I dunno what, sorry!";
+$string["error:checkServerLog"] = "Please check the server log.";
 
 $string['h5pcaretaker'] = 'H5P Caretaker';
 $string['headline'] = 'Take care of your H5P';

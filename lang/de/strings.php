@@ -6,6 +6,7 @@ $string['error:fileTooLarge'] = "Die Datei ist größer als die maximal erlaubte
 $string['error:methodNotAllowed'] = 'Methode nicht erlaubt';
 $string['error:noFileOrTooLarge'] = 'Es sieht so aus, als sei keine Datei angegeben worden oder die Dateigröße überschreitet die Grenze von %s KB.';
 $string["error:unknownError"] = "Etwas ist schief gelaufen, aber ich weiß nicht was.";
+$string["error:checkServerLog"] = "Bitte prüfe die Server-Logs.";
 
 $string['h5pcaretaker'] = 'H5P Caretaker';
 $string['headline'] = 'Kümmere dich um H5P';
