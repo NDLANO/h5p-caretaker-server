@@ -124,6 +124,8 @@ $distCSS = basename(glob($distBase . '/h5p-caretaker-client-*.css')[0] ?? '');
           expandAllMessages: "<?php echo LocaleUtils::getString('expand:expandAllMessages') ?>",
           collapseAllMessages: "<?php echo LocaleUtils::getString('expand:collapseAllMessages') ?>",
           reportTitleTemplate: "<?php echo LocaleUtils::getString('report:titleTemplate') ?>",
+          unknownError: "<?php echo LocaleUtils::getString('error:unknownError') ?>",
+          checkServerLog: "<?php echo LocaleUtils::getString('error:checkServerLog') ?>",
         },
       });
     });
