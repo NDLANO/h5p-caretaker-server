@@ -56,7 +56,8 @@ $distCSS = basename(glob($distBase . '/h5p-caretaker-client-*.css')[0] ?? '');
 
         foreach ($localesLookup as $availableLocale => $nativeName) {
             $selected = ($availableLocale === $locale) ? "selected" : "";
-            echo "<option value=\"$availableLocale\" $selected>" . $nativeName . "</option>";
+            $capitalizedNativeName = ucfirst($nativeName);
+            echo "<option value=\"$availableLocale\" $selected>" . $capitalizedNativeName . "</option>";
         }
         ?>
     </select>
