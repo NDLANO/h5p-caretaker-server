@@ -22,6 +22,8 @@ $string['filter:showSelected'] = 'Various selected contents';
 $string['filter:showNone'] = 'Show none';
 $string['filter:filterByContent'] = 'Filter by content:';
 $string['filter:reset'] = 'Reset';
+$string['filter:expandList'] = 'Expand list';
+$string['filter:collapseList'] = 'Collapse list';
 
 $string['dropzone:orDragTheFileHere'] = 'or drag the file here';
 $string['dropzone:removeFile'] = 'Remove file';
@@ -38,6 +40,9 @@ $string['results:groupBy'] = 'Group by';
 $string['results:download'] = 'Download';
 $string['results:showDetails'] = 'Show details';
 $string['results:hideDetails'] = 'Hide details';
+$string['results:changeSortingGrouping'] = 'Change sorting/grouping';
+$string['results:previousMessage'] = 'Previous message';
+$string['results:nextMessage'] = 'Next message';
 
 $string['expand:expandAllMessages'] = 'Expand all messages';
 $string['expand:collapseAllMessages'] = 'Collapse all messages';

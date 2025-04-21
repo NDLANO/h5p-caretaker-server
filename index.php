@@ -127,6 +127,11 @@ $distCSS = basename(glob($distBase . '/h5p-caretaker-client-*.css')[0] ?? '');
           reportTitleTemplate: "<?php echo LocaleUtils::getString('report:titleTemplate') ?>",
           unknownError: "<?php echo LocaleUtils::getString('error:unknownError') ?>",
           checkServerLog: "<?php echo LocaleUtils::getString('error:checkServerLog') ?>",
+          expandList: "<?php echo LocaleUtils::getString('filter:expandList') ?>",
+          collapseList: "<?php echo LocaleUtils::getString('filter:collapseList') ?>",
+          changeSortingGrouping: "<?php echo LocaleUtils::getString('results:changeSortingGrouping') ?>",
+          previousMessage: "<?php echo LocaleUtils::getString('results:previousMessage') ?>",
+          nextMessage: "<?php echo LocaleUtils::getString('results:nextMessage') ?>",
         },
       });
     });
