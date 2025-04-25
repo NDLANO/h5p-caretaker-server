@@ -22,6 +22,8 @@ $string['filter:showSelected'] = 'Différents contenus sélectionnés';
 $string['filter:showNone'] = 'Ne rien afficher';
 $string['filter:filterByContent'] = 'Filtrer sur le contenu:';
 $string['filter:reset'] = 'Réinitialiser';
+$string['filter:expandList'] = 'Développer la liste';
+$string['filter:collapseList'] = 'Réduire la liste';
 
 $string['dropzone:orDragTheFileHere'] = 'ou glissez le fichier ici';
 $string['dropzone:removeFile'] = 'Supprimer le fichier';
@@ -38,8 +40,8 @@ $string['results:groupBy'] = 'Grouper par';
 $string['results:download'] = 'Télécharger';
 $string['results:showDetails'] = 'Voir les détails';
 $string['results:hideDetails'] = 'Cacher les détails';
-
-$string['expand:expandAllMessages'] = 'Déplier tous les messages';
-$string['expand:collapseAllMessages'] = 'Replier tous les messages';
+$string['results:changeSortingGrouping'] = 'Modifier le tri/regroupement';
+$string['results:previousMessage'] = 'Message précédent';
+$string['results:nextMessage'] = 'Message suivant';
 
 $string['report:TitleTemplate'] = 'Rapport H5P-Caretaker pour @title';
