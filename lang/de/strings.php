@@ -44,7 +44,4 @@ $string['results:changeSortingGrouping'] = 'Ändere Sortierung/Gruppierung';
 $string['results:previousMessage'] = 'Vorherige Meldung';
 $string['results:nextMessage'] = 'Nächste Meldung';
 
-$string['expand:expandAllMessages'] = 'Alle Meldungen ausklappen';
-$string['expand:collapseAllMessages'] = 'Alle Meldungen einklappen';
-
 $string['report:TitleTemplate'] = 'H5P-Caretaker-Report für @title';

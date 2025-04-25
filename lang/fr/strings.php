@@ -44,7 +44,4 @@ $string['results:changeSortingGrouping'] = 'Modifier le tri/regroupement';
 $string['results:previousMessage'] = 'Message précédent';
 $string['results:nextMessage'] = 'Message suivant';
 
-$string['expand:expandAllMessages'] = 'Déplier tous les messages';
-$string['expand:collapseAllMessages'] = 'Replier tous les messages';
-
 $string['report:TitleTemplate'] = 'Rapport H5P-Caretaker pour @title';

@@ -44,7 +44,4 @@ $string['results:changeSortingGrouping'] = 'Change sorting/grouping';
 $string['results:previousMessage'] = 'Previous message';
 $string['results:nextMessage'] = 'Next message';
 
-$string['expand:expandAllMessages'] = 'Expand all messages';
-$string['expand:collapseAllMessages'] = 'Collapse all messages';
-
 $string['report:TitleTemplate'] = 'H5P Caretaker report for @title';
