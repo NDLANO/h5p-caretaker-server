@@ -18,14 +18,37 @@ require_once __DIR__ . "/utils/LocaleUtils.php";
 
 $DEFAULT_LOCALE_KEY = "locale";
 
+function getFileByPattern($dir, $pattern)
+{
+    $files = glob($dir . DIRECTORY_SEPARATOR . $pattern);
+    error_log(print_r($files, true));
+
+    if (empty($files)) {
+        return '';
+    }
+
+    $versioned_files = array();
+    foreach ($files as $file) {
+        $filename = basename($file);
+        if (preg_match('/(\d+\.\d+\.\d+)/', $filename, $matches) ) {
+              $version                      = $matches[1];
+              $versioned_files[ $filename ] = $version;
+        }
+    }
+
+    arsort($versioned_files, SORT_NATURAL);
+
+    return !empty($versioned_files) ? key($versioned_files) : basename($files[0] ?? '');
+}
+
 // Set the language based on the browser's language
 $locale = LocaleUtils::requestTranslation(
     $_GET['locale'] ?? locale_accept_from_http($_SERVER["HTTP_ACCEPT_LANGUAGE"])
 );
 
 $distBase = './node_modules/@explorendla/h5p-caretaker-client/dist/@explorendla';
-$distJS = basename(glob($distBase . '/h5p-caretaker-client-*.js')[0] ?? '');
-$distCSS = basename(glob($distBase . '/h5p-caretaker-client-*.css')[0] ?? '');
+$distJS = getFileByPattern($distBase, 'h5p-caretaker-client-*.js');
+$distCSS = getFileByPattern($distBase, 'h5p-caretaker-client-*.css');
 ?>
 
 <!DOCTYPE html>
