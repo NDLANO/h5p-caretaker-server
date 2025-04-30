@@ -116,6 +116,11 @@ $distCSS = getFileByPattern($distBase, 'h5p-caretaker-client-*.css');
     </div>
 
   </main>
+
+  <div class="branding">
+    <span class="powered-by"></span><svg class="ndla-logo"></svg>
+  <div/>
+
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       new H5PCaretaker({
