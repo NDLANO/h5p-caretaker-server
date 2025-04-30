@@ -44,4 +44,4 @@ $string['results:changeSortingGrouping'] = 'Ändere Sortierung/Gruppierung';
 $string['results:previousMessage'] = 'Vorherige Meldung';
 $string['results:nextMessage'] = 'Nächste Meldung';
 
-$string['report:TitleTemplate'] = 'H5P-Caretaker-Report für @title';
+$string['report:titleTemplate'] = 'H5P-Caretaker-Report für @title';
