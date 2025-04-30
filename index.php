@@ -21,8 +21,6 @@ $DEFAULT_LOCALE_KEY = "locale";
 function getFileByPattern($dir, $pattern)
 {
     $files = glob($dir . DIRECTORY_SEPARATOR . $pattern);
-    error_log(print_r($files, true));
-
     if (empty($files)) {
         return '';
     }
