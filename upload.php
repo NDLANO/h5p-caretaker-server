@@ -64,14 +64,23 @@ if (isset($_POST['locale'])) {
 
 $h5pCaretaker = new H5PCaretaker($config);
 
-// TODO add an action parameter:
-// - analyze (default)
-// - write (with optional overwrite parameters)
+if (isset($_POST['changes'])) {
+    $file = $h5pCaretaker->write([
+        'file' => $file['tmp_name'],
+        'changes' => json_decode($_POST['changes'])
+    ]);
 
-$analysis = $h5pCaretaker->analyze(['file' => $file['tmp_name']]);
+    if (!isset($file) || isset($file['error'])) {
+        done(422, $file['error']);
+    }
 
-if (isset($analysis['error'])) {
-    done(422, $analysis['error']);
+    done(200, $file['result']);
+} else {
+    $analysis = $h5pCaretaker->analyze(['file' => $file['tmp_name']]);
+
+    if (!isset($analysis) || isset($analysis['error'])) {
+        done(422, $analysis['error']);
+    }
+
+    done(200, $analysis['result']);
 }
-
-done(200, $analysis['result']);

@@ -28,9 +28,9 @@ function getFileByPattern($dir, $pattern)
     $versioned_files = array();
     foreach ($files as $file) {
         $filename = basename($file);
-        if (preg_match('/(\d+\.\d+\.\d+)/', $filename, $matches) ) {
-              $version                      = $matches[1];
-              $versioned_files[ $filename ] = $version;
+        if (preg_match('/(\d+\.\d+\.\d+)/', $filename, $matches)) {
+            $version                      = $matches[1];
+            $versioned_files[ $filename ] = $version;
         }
     }
 
@@ -148,7 +148,6 @@ $distCSS = getFileByPattern($distBase, 'h5p-caretaker-client-*.css');
           download: "<?php echo LocaleUtils::getString('results:download') ?>",
           showDetails: "<?php echo LocaleUtils::getString('results:showDetails') ?>",
           hideDetails: "<?php echo LocaleUtils::getString('results:hideDetails') ?>",
-          reportTitleTemplate: "<?php echo LocaleUtils::getString('report:titleTemplate') ?>",
           unknownError: "<?php echo LocaleUtils::getString('error:unknownError') ?>",
           checkServerLog: "<?php echo LocaleUtils::getString('error:checkServerLog') ?>",
           expandList: "<?php echo LocaleUtils::getString('filter:expandList') ?>",
