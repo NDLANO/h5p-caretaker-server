@@ -43,5 +43,3 @@ $string['results:hideDetails'] = 'Cacher les détails';
 $string['results:changeSortingGrouping'] = 'Modifier le tri/regroupement';
 $string['results:previousMessage'] = 'Message précédent';
 $string['results:nextMessage'] = 'Message suivant';
-
-$string['report:titleTemplate'] = 'Rapport H5P-Caretaker pour @title';
