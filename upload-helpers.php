@@ -39,7 +39,7 @@ function done($code, $message)
     if (isset($code)) {
         http_response_code($code);
     };
-    
+
     if (isset($message)) {
         echo $message;
     }

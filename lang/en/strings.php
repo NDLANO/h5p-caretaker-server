@@ -43,5 +43,3 @@ $string['results:hideDetails'] = 'Hide details';
 $string['results:changeSortingGrouping'] = 'Change sorting/grouping';
 $string['results:previousMessage'] = 'Previous message';
 $string['results:nextMessage'] = 'Next message';
-
-$string['report:titleTemplate'] = 'H5P Caretaker report for @title';
