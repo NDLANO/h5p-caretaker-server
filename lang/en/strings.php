@@ -38,6 +38,7 @@ $string['results:results'] = 'results';
 $string['results:filterBy'] = 'Filter by';
 $string['results:groupBy'] = 'Group by';
 $string['results:download'] = 'Download';
+$string['results:downloadEditedH5P'] = 'Download edited H5P';
 $string['results:showDetails'] = 'Show details';
 $string['results:hideDetails'] = 'Hide details';
 $string['results:changeSortingGrouping'] = 'Change sorting/grouping';
