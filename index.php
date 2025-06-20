@@ -146,6 +146,7 @@ $distCSS = getFileByPattern($distBase, 'h5p-caretaker-client-*.css');
           filterBy: "<?php echo LocaleUtils::getString('results:filterBy') ?>",
           groupBy: "<?php echo LocaleUtils::getString('results:groupBy') ?>",
           download: "<?php echo LocaleUtils::getString('results:download') ?>",
+          downloadEditedH5P: "<?php echo LocaleUtils::getString('results:downloadEditedH5P') ?>",
           showDetails: "<?php echo LocaleUtils::getString('results:showDetails') ?>",
           hideDetails: "<?php echo LocaleUtils::getString('results:hideDetails') ?>",
           unknownError: "<?php echo LocaleUtils::getString('error:unknownError') ?>",
