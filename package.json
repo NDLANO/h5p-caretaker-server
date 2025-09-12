@@ -1,6 +1,6 @@
 {
   "name": "h5p-caretaker-server",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "PHP based server component for using the H5P Caretaker library",
   "keywords": [
     "H5P",
