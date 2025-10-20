@@ -29,8 +29,9 @@ $string['dropzone:orDragTheFileHere'] = 'or drag the file here';
 $string['dropzone:removeFile'] = 'Remove file';
 $string['dropzone:uploadProgress'] = 'Upload progress';
 $string['dropzone:uploadH5PFile'] = 'Upload your H5P file';
-$string['dropzone:fileBeingChecked'] = 'Your file is being checked';
-$string['dropzone:fileCheckedSuccessfully'] = 'Your file check was completed';
+$string['dropzone:fileBeingChecked'] = 'Your file is being checked ...';
+$string['dropzone:fileCheckedSuccessfully'] = 'Your file check was completed.';
+$string['dropzone:instructions'] = 'Now do all the changes that you deem necessary and download the edited version of your file.';
 
 $string['results:totalMessages'] = 'Total messages';
 $string['results:issues'] = 'issues';
@@ -38,10 +39,9 @@ $string['results:results'] = 'results';
 $string['results:filterBy'] = 'Filter by';
 $string['results:groupBy'] = 'Group by';
 $string['results:download'] = 'Download';
+$string['results:downloadEditedH5P'] = 'Download edited H5P';
 $string['results:showDetails'] = 'Show details';
 $string['results:hideDetails'] = 'Hide details';
 $string['results:changeSortingGrouping'] = 'Change sorting/grouping';
 $string['results:previousMessage'] = 'Previous message';
 $string['results:nextMessage'] = 'Next message';
-
-$string['report:titleTemplate'] = 'H5P Caretaker report for @title';

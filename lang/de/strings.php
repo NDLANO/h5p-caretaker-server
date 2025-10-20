@@ -29,8 +29,9 @@ $string['dropzone:orDragTheFileHere'] = 'oder ziehe die Datei hierher';
 $string['dropzone:removeFile'] = 'Entferne Datei';
 $string['dropzone:uploadProgress'] = 'Upload-Fortschritt';
 $string['dropzone:uploadH5PFile'] = 'Lade deine H5P-Datei hoch';
-$string['dropzone:fileBeingChecked'] = 'Deine Datei wird geprüft';
-$string['dropzone:fileCheckedSuccessfully'] = 'Die Prüfung deiner Datei wurde abgeschlossen';
+$string['dropzone:fileBeingChecked'] = 'Deine Datei wird geprüft ...';
+$string['dropzone:fileCheckedSuccessfully'] = 'Die Prüfung deiner Datei wurde abgeschlossen.';
+$string['dropzone:instructions'] = 'Nimm nun alle Änderungen vor, die du für notwendig hältst, und lade die bearbeitete Version deiner Datei herunter.';
 
 $string['results:totalMessages'] = 'Meldungen insgesamt';
 $string['results:issues'] = 'Auffälligkeiten';
@@ -38,10 +39,9 @@ $string['results:results'] = 'Ergebnisse';
 $string['results:filterBy'] = 'Filtern nach';
 $string['results:groupBy'] = 'Gruppieren nach';
 $string['results:download'] = 'Herunterladen';
+$string['results:downloadEditedH5P'] = 'Geändertes H5P herunterladen';
 $string['results:showDetails'] = 'Zeige Details';
 $string['results:hideDetails'] = 'Verstecke Details';
 $string['results:changeSortingGrouping'] = 'Ändere Sortierung/Gruppierung';
 $string['results:previousMessage'] = 'Vorherige Meldung';
 $string['results:nextMessage'] = 'Nächste Meldung';
-
-$string['report:titleTemplate'] = 'H5P-Caretaker-Report für @title';

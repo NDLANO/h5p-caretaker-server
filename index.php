@@ -28,9 +28,9 @@ function getFileByPattern($dir, $pattern)
     $versioned_files = array();
     foreach ($files as $file) {
         $filename = basename($file);
-        if (preg_match('/(\d+\.\d+\.\d+)/', $filename, $matches) ) {
-              $version                      = $matches[1];
-              $versioned_files[ $filename ] = $version;
+        if (preg_match('/(\d+\.\d+\.\d+)/', $filename, $matches)) {
+            $version                      = $matches[1];
+            $versioned_files[ $filename ] = $version;
         }
     }
 
@@ -133,6 +133,7 @@ $distCSS = getFileByPattern($distBase, 'h5p-caretaker-client-*.css');
           uploadYourH5Pfile: "<?php echo LocaleUtils::getString('dropzone:uploadH5PFile') ?>",
           yourFileIsBeingChecked: "<?php echo LocaleUtils::getString('dropzone:fileBeingChecked') ?>",
           yourFileWasCheckedSuccessfully: "<?php echo LocaleUtils::getString('dropzone:fileCheckedSuccessfully') ?>",
+          instructions: "<?php echo LocaleUtils::getString('dropzone:instructions') ?>",
           allFilteredOut: "<?php LocaleUtils::getString('filter:allFilteredOut') ?>",
           contentFilter: "<?php echo LocaleUtils::getString('filter:contentFilter') ?>",
           showAll: "<?php echo LocaleUtils::getString('filter:showAll') ?>",
@@ -146,9 +147,9 @@ $distCSS = getFileByPattern($distBase, 'h5p-caretaker-client-*.css');
           filterBy: "<?php echo LocaleUtils::getString('results:filterBy') ?>",
           groupBy: "<?php echo LocaleUtils::getString('results:groupBy') ?>",
           download: "<?php echo LocaleUtils::getString('results:download') ?>",
+          downloadEditedH5P: "<?php echo LocaleUtils::getString('results:downloadEditedH5P') ?>",
           showDetails: "<?php echo LocaleUtils::getString('results:showDetails') ?>",
           hideDetails: "<?php echo LocaleUtils::getString('results:hideDetails') ?>",
-          reportTitleTemplate: "<?php echo LocaleUtils::getString('report:titleTemplate') ?>",
           unknownError: "<?php echo LocaleUtils::getString('error:unknownError') ?>",
           checkServerLog: "<?php echo LocaleUtils::getString('error:checkServerLog') ?>",
           expandList: "<?php echo LocaleUtils::getString('filter:expandList') ?>",
