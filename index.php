@@ -133,6 +133,7 @@ $distCSS = getFileByPattern($distBase, 'h5p-caretaker-client-*.css');
           uploadYourH5Pfile: "<?php echo LocaleUtils::getString('dropzone:uploadH5PFile') ?>",
           yourFileIsBeingChecked: "<?php echo LocaleUtils::getString('dropzone:fileBeingChecked') ?>",
           yourFileWasCheckedSuccessfully: "<?php echo LocaleUtils::getString('dropzone:fileCheckedSuccessfully') ?>",
+          instructions: "<?php echo LocaleUtils::getString('dropzone:instructions') ?>",
           allFilteredOut: "<?php LocaleUtils::getString('filter:allFilteredOut') ?>",
           contentFilter: "<?php echo LocaleUtils::getString('filter:contentFilter') ?>",
           showAll: "<?php echo LocaleUtils::getString('filter:showAll') ?>",

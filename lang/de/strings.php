@@ -29,8 +29,9 @@ $string['dropzone:orDragTheFileHere'] = 'oder ziehe die Datei hierher';
 $string['dropzone:removeFile'] = 'Entferne Datei';
 $string['dropzone:uploadProgress'] = 'Upload-Fortschritt';
 $string['dropzone:uploadH5PFile'] = 'Lade deine H5P-Datei hoch';
-$string['dropzone:fileBeingChecked'] = 'Deine Datei wird geprüft';
-$string['dropzone:fileCheckedSuccessfully'] = 'Die Prüfung deiner Datei wurde abgeschlossen';
+$string['dropzone:fileBeingChecked'] = 'Deine Datei wird geprüft ...';
+$string['dropzone:fileCheckedSuccessfully'] = 'Die Prüfung deiner Datei wurde abgeschlossen.';
+$string['dropzone:instructions'] = 'Nimm nun alle Änderungen vor, die du für notwendig hältst, und lade die bearbeitete Version deiner Datei herunter.';
 
 $string['results:totalMessages'] = 'Meldungen insgesamt';
 $string['results:issues'] = 'Auffälligkeiten';
