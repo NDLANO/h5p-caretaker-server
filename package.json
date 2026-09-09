@@ -9,6 +9,6 @@
   "author": "NDLA",
   "license": "MIT",
   "dependencies": {
-    "@explorendla/h5p-caretaker-client": "^1.1.8"
+    "@explorendla/h5p-caretaker-client": "^1.1.9"
   }
 }
